@@ -1,0 +1,118 @@
+body {
+  background-color: #f0ecff;
+}
+
+#successAlert {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 400px;
+}
+
+#logged-profile {
+  cursor: pointer;
+}
+
+.add-btn {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.desc {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  border-color: #dee2e6;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.25);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.desc:focus {
+  outline: none;
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.card-body {
+  cursor: pointer;
+}
+
+#post-desc {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  border-color: #dee2e6;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.25);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#post-desc:focus {
+  outline: none;
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.card-footer {
+  padding: 0;
+}
+.comment {
+  /* border-bottom: 1px solid #ccc; */
+  padding: 10px;
+}
+.comment .comment-body {
+  color: #666;
+  margin-left: 25px;
+}
+.comment .comment-author {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.lds-dual-ring,
+.lds-dual-ring:after {
+  box-sizing: border-box;
+}
+.lds-dual-ring {
+  color: #999;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  /*
+  width: 80px;
+  height: 80px;
+  */
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6.4px solid currentColor;
+  border-color: currentColor transparent currentColor transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
