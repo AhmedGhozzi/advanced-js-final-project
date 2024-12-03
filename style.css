@@ -7,22 +7,40 @@ body {
   right: 10px;
   bottom: 10px;
   width: 400px;
+  max-width: 100%;
 }
 
 #logged-profile {
   cursor: pointer;
 }
 
-.add-btn {
+.add-btn{
   position: fixed;
-  right: 50px;
-  bottom: 50px;
+  right: 30px;
+  bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  z-index: 999999999;
+}
+
+.add-post-btn-phone{
+  display: none;
+}
+
+@media (max-width:576px){
+  #successAlert{
+    right: 0 !important;
+  }
+  .add-btn{
+    display: none !important;
+  }
+  .add-post-btn-phone{
+    display: block;
+  }
 }
 
 .desc {

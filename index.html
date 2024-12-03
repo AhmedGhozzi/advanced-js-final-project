@@ -14,7 +14,7 @@
 <body>
     <!-- login modal -->
     <div class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 9999999999;">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Login</h5>
@@ -50,7 +50,7 @@
     <!-- === login modal === -->
     <!-- register modal -->
     <div class="modal fade" id="register-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 9999999999;">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Register</h5>
@@ -94,7 +94,7 @@
     <!-- === register modal === -->
     <!-- create or edit post modal -->
     <div class="modal fade" id="post-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 9999999999;">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="modal-title">Create Post</h5>
@@ -176,49 +176,13 @@
                 d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
         </symbol>
     </svg>
-    <div id="successAlert" class="show fade" style="z-index: 999999999;"></div>
+    <div id="successAlert" class="show fade container" style="z-index: 999999999;"></div>
     <!-- === alert === -->
-     <!-- edit post modal -->
-    <!-- <div class="modal fade" id="post-edit-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Edit Post</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">title:</label>
-                            <input type="text" class="form-control" id="edit-post-title" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Description:</label>
-                            <textarea name="" id="edit-post-desc" class="desc"></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Image:</label>
-                            <input class="form-control" type="file" id="edit-post-image">
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                        Cancel
-                    </button>
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="" onclick="createPost()">
-                        Confirm
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- === edit post modal === -->
     <!-- nav bar -->
     <div class="container">
         <div class="d-flex justify-content-center">
-            <div class="col-9">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light rounded-bottom shadow-sm">
+            <div class="col-12 col-lg-8">
+                <nav class="navbar navbar-expand-md navbar-light bg-light rounded-bottom shadow-sm">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">Bombaclat</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -268,11 +232,20 @@
         </div>
     </div>
     <!-- === nav bar === -->
-
+    <!-- add post button for phones -->
+     <div class="container mt-5 col-12 add-post-btn-phone">
+         <button id="add-post" type="button" class="add-btn-phone btn btn-primary shadow-lg w-100" onclick="fillPostModal()">
+             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                 <path
+                     d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+             </svg>
+         </button>
+     </div>
+    <!-- === add post button for phones === -->
     <!-- main content -->
     <div class="container" style="min-height: 100vh">
         <div class="d-flex justify-content-center mt-5">
-            <div class="col-9 position-relative">
+            <div class="col-12 col-lg-8 position-relative">
                 <div class="loader-wrapper" id="posts-loader" style="position: fixed;left: 50%;top: 50%;transform:translate(-50%,-50%);z-index: 999999999;">
                     <div class="lds-dual-ring" style="background-color: rgb(153, 153, 153, 0.5);"></div>
                 </div>

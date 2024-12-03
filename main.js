@@ -149,12 +149,14 @@ function showAlert(type, message) {
   setTimeout(() => {
     wrapper.querySelector(".alert").classList.remove("show");
     wrapper.querySelector(".alert").classList.add("fade");
-  }, 4000); // Fades out
+  }, 4000);
+  // Fades out
 
   // Remove from DOM after the transition ends (Bootstrap's fade time is 150ms)
   setTimeout(() => {
     wrapper.remove();
-  }, 4500); // Fully remove
+  }, 4500);
+  // Fully remove
 }
 
 function setupUi() {
