@@ -41,6 +41,9 @@ body {
   .add-post-btn-phone{
     display: block;
   }
+  .owner-btns{
+    font-size: 0.8rem;
+  }
 }
 
 .desc {

@@ -33,8 +33,8 @@ function getPosts(page = 1,reload= true) {
             console.log("Post Author ID: ", post.author.id);
             editDeleteBtns = `
               <div class="buttons">
-                <button type="button" class="btn btn-secondary" data-post='${JSON.stringify(post)}' onclick='fillPostModal(this)'>Edit</button>
-                <button type="button" class="btn btn-danger" onclick='fillDeletePost(${post.id})' data-bs-toggle="modal" data-bs-target="#delete-post-modal">Delete</button>
+                <button type="button" class="btn btn-secondary owner-btns" data-post='${JSON.stringify(post)}' onclick='fillPostModal(this)'>Edit</button>
+                <button type="button" class="btn btn-danger owner-btns" onclick='fillDeletePost(${post.id})' data-bs-toggle="modal" data-bs-target="#delete-post-modal">Delete</button>
               </div>
             `;
           }
