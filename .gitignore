@@ -1,0 +1,16 @@
+# Ignore node_modules (if you're using npm or yarn)
+node_modules/
+
+# Ignore the build and dist directories (for compiled files)
+build/
+dist/
+
+# Ignore system files (like macOS Finder, Windows Thumbs.db, etc.)
+.DS_Store
+Thumbs.db
+
+# Ignore environment variable files
+.env
+
+# Ignore logs
+*.log
