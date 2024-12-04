@@ -51,7 +51,7 @@ function getPosts(id = getQueryParam("id")) {
           }
           let p = `
               <div class="card shadow-sm mb-5" data-id=${post.id}>
-                          <div class="card-header d-flex align-items-center justify-content-between">
+                          <div class="card-header d-flex align-items-center justify-content-between flex-wrap">
                               <div class="d-flex align-items-center gap-1" style="cursor:pointer;" onclick="showUserPosts(${post.author.id})">
                                   <div style="width: 30px; height: 30px; overflow: hidden;">
                                       <img src="${post.author.profile_image.length ? post.author.profile_image : "profile-pics/default.png"}" alt="" class="rounded-circle" style="object-fit: cover; width: 100%; height: 100%;"/>
